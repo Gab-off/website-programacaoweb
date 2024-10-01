@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* CSS GERAL  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: roboto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1270px;
+}
+
+/* propriedades personalizadas */
+:root {
+  --purple-color-principal: #3b3dfb;
+  --full-black: #000000;
+  --full-white: #ffffff;
+  --shadow-search-bar: rgba(0, 0, 0, 0.25);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header .container {
+  margin: 24px 0;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+header ul li {
+  height: 44px;
+}
+
+header .search-box {
+  width: 600px;
+  height: 44px;
+  border: none;
+  box-shadow: 0 1px 4px 1px var(--shadow-search-bar);
+  border-radius: 5px;
+}
+
+header ul li nav {
+  display: flex;
+  gap: 36px;
+}
+
+nav .nav-button {
+  height: 44px;
+}
+
+nav .blue,
+nav .white {
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+nav .white {
+  color: var(--full-black);
+}
+
+nav .blue {
+  width: 165px;
+  background-color: var(--purple-color-principal);
+  color: var(--full-white);
+}
+
+/* TEXT AND FORM */
+.image-box-background {
+  background-image: url();
+}
