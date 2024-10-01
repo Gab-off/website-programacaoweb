@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 /* CSS GERAL  */
 * {
   margin: 0;
@@ -41,6 +41,11 @@ a {
   --shadow-search-bar: rgba(0, 0, 0, 0.25);
   --form-background-faded: rgba(83, 84, 96, 0.6);
   --shadow-form-box: rgba(211, 211, 211, 0.5);
+  --shadow-cardplan: rgba(59, 61, 251, 0.2);
+  --background-cardtext-box: rgba(230, 230, 230, 0.2);
+  --font-card-gray: #585858;
+  --button-cards-plans: rgba(59, 61, 251, 0.84);
+  --shadow-blue-card-plan: rgba(199, 199, 250, 1);
 }
 
 /* Header */
@@ -174,11 +179,10 @@ nav .blue {
 }
 
 /* Empresas cadastradas */
-.blue-background { 
+.blue-background {
   background-color: var(--purple-color-principal);
   display: flex;
   justify-content: center;
-
 }
 
 .blue-background .container {
@@ -199,5 +203,134 @@ nav .blue {
   justify-content: center;
   gap: 50px;
   height: 50px;
+}
+
+/* cursos mais acessados */
+.container-hot-courses {
+  display: flex;
+  justify-content: center;
+}
+
+.hot-courses {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 60px;
+}
+
+.hot-courses h2 {
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.container-video-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 74px;
+}
+
+.container-video-cards .course-card {
+  display: flex;
+  width: 598px;
+  text-align: start;
+}
+
+.course-card .video {
+  margin-right: 15px;
+}
+
+
+.course-card .video img {
+  border-radius: 3px;
+}
+
+/* NOSSOS PLANOS */
+.container-course-plans {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-course-plans .container {
+  padding: 80px 0 117px 0;
+}
+
+.container-course-plans h2, .container-course-plans h3 {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.container-course-plans h2 {
+  margin-bottom: 55px;
+}
+
+.container-course-plans h3 {
+  font-weight: 500;
+}
+
+.container-course-plans .free-paid-plans {
+  display: flex;
+  gap: 35px;
+}
+
+.free-paid-plans .card {
+  width: 400px;
+  height: 600px;
+  border-radius: 3px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  
+}
+
+.card p {
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: var(--font-card-gray);
+}
+
+.card .container-boxtext-gray, .container-boxtext-purple {
+  height: 220px;
+  box-shadow: 0 1px 1px 0 var(--shadow-search-bar);
+  text-align: start;
+  padding: 40px 14px 40px 13px;
+  margin: 83px 0;
+  background-color: var(--background-cardtext-box);
+  border-radius: 5px;
+}
+
+.card a {
+  width: 279px;
+  height: 66px;
+}
+
+.card-button-purple {
+  background-color: var(--purple-color-principal);
+  color: var(--full-white);
+  box-shadow: 0 2px 4px 0 var(--shadow-search-bar);
+}
+
+.card-button-white {
+  background-color: var(--full-white);
+  color: var(--purple-color-principal);
+  box-shadow: 0 4px 4px 0 var(--shadow-search-bar);
+}
+
+.card-one, .card-three {
+  box-shadow: 0 1px 2px 1px var(--shadow-cardplan);
+}
+
+.card-two {
+  color: white;
+  background-color: var(--purple-color-principal);
+  box-shadow: 0 4px 4px 0 var(--shadow-blue-card-plan);
+}
+
+.container-boxtext-purple p{
+ color: var(--full-white); 
 }
 
