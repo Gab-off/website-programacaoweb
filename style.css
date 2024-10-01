@@ -23,12 +23,24 @@ a {
   width: 1270px;
 }
 
+.blue,
+.white {
+  text-transform: uppercase;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
 /* propriedades personalizadas */
 :root {
   --purple-color-principal: #3b3dfb;
   --full-black: #000000;
   --full-white: #ffffff;
   --shadow-search-bar: rgba(0, 0, 0, 0.25);
+  --form-background-faded: rgba(83, 84, 96, 0.6);
+  --shadow-form-box: rgba(211, 211, 211, 0.5)
 }
 
 /* Header */
@@ -69,15 +81,7 @@ nav .nav-button {
   height: 44px;
 }
 
-nav .blue,
-nav .white {
-  text-transform: uppercase;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-}
+
 
 nav .white {
   color: var(--full-black);
@@ -91,5 +95,84 @@ nav .blue {
 
 /* TEXT AND FORM */
 .image-box-background {
-  background-image: url();
+  /* background-image: url(img/background-programming-banner.jpg);
+  background-size:cover;
+  background-position: center; */
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
+
+.banner-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0.87;
+}
+
+.text-form-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+
+.left-column {
+  width: 673px;
+
+}
+
+.left-column h1 {
+  font-size: 64px;
+  font-weight: bold;
+  color: var(--full-white);
+  text-transform: uppercase;
+}
+
+.left-column .blue-word {
+  color: var(--purple-color-principal);
+}
+
+.right-column {
+  width: 531px;
+  background-color: var(--form-background-faded);
+  display: flex;
+  flex-direction: column;
+  padding: 45px 40px;
+  border-radius: 5px;
+  color: var(--full-white);
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.right-column h2 {
+  margin-bottom: 45px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.right-column p {
+  margin-bottom: 12px;
+}
+
+.right-column input {
+  width: 451px;
+  height: 45px;
+  border-radius: 5px;
+  margin-bottom: 45px;
+  border: none;
+  box-shadow: 0 1px 5px 0 var(--shadow-form-box);
+}
+
+.right-column a {
+  align-self: flex-end;
+  width: 242px;
+  height: 51px;
+  color: var(--full-white);
+  background-color: var(--purple-color-principal);
+}
+
