@@ -89,6 +89,7 @@ nav .nav-button {
 }
 
 nav .white {
+  width: 124px;
   color: var(--full-black);
 }
 
@@ -365,3 +366,108 @@ footer .right .icon-social-media {
   width: 24px;
 }
 
+/* CURSOS CSS */
+/* Banner com as logos dos cursos */
+
+.linguagens {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 120px;
+  border-bottom: solid 2px #d9d9d9;
+  padding: 26.25px 85px;
+  border-left: solid 2px #d9d9d9;
+  
+}
+
+.linguagens #borda {
+  border-left: solid 2px #d9d9d9;
+  padding-left: 85px;
+
+
+}
+
+#titulo {
+  align-self: center;
+  padding-right: 0px;
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+/* 1º Parte dos cursos */
+
+.meio {
+  padding: 24px 85px 0px 85px;
+  
+}
+
+.cursos1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 100px;
+  padding-top: 44px;
+
+}
+
+.cursos1 .java-ninja {
+  max-width: 26%;
+  
+}
+
+.cursos1 h4 {
+  margin-top: 9.25px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+/* 2º parte dos cursos */
+
+.cursos2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 173px;
+
+}
+
+.cursos2 h4 {
+  margin-top: 9.25px;
+}
+
+.cursos2 h3 {
+  max-width: 300px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/*footer  */
+
+.footer{
+  display: flex;
+  justify-content:space-between;
+  background-color: #3B3DFB;
+  padding: 33px 85px 33px 85px;
+  width: auto;
+  height: 206px;
+  color: #FFFFFF;
+}
+
+.footer .contatos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.footer .redes-sociais {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.footer .redes-sociais div img {
+  max-width: 18px;
+  margin-right: 5px;
+}
