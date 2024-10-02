@@ -48,6 +48,7 @@ a {
   --font-card-gray: #585858;
   --button-cards-plans: rgba(59, 61, 251, 0.84);
   --shadow-blue-card-plan: rgba(199, 199, 250, 1);
+  --hover-button: rgba(199, 199, 250, 1);
 }
 
 /* Header */
@@ -75,8 +76,21 @@ header .search-box {
   width: 600px;
   height: 44px;
   border: none;
+  outline: none;
   box-shadow: 0 1px 4px 1px var(--shadow-search-bar);
   border-radius: 5px;
+  padding: 0 20px;
+  &:focus {
+    border: 2px solid var(--purple-color-principal);
+    transition: 0.2s ease;
+  }
+}
+
+header .search-icon {
+  position: relative;
+  float: right;
+  top: 10px;
+  right: 40px;
 }
 
 header ul li nav {
@@ -170,13 +184,20 @@ nav .blue {
   border-radius: 5px;
   margin-bottom: 45px;
   border: none;
+  outline: none;
+  padding: 0 20px;
   box-shadow: 0 1px 5px 0 var(--shadow-form-box);
+  &:focus {
+    border: 2px solid var(--purple-color-principal);
+    transition: 0.2s ease;
+  }
 }
 
 .right-column a {
   align-self: flex-end;
   width: 242px;
   height: 51px;
+  font-size: 20px;
   color: var(--full-white);
   background-color: var(--purple-color-principal);
 }
@@ -235,6 +256,7 @@ nav .blue {
 }
 
 .container-video-cards .course-card {
+  color: var(--full-black);
   display: flex;
   width: 598px;
   text-align: start;
@@ -244,8 +266,19 @@ nav .blue {
   margin-right: 15px;
 }
 
+.course-card li {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .course-card .video img {
   border-radius: 3px;
+}
+
+li.small-font {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* NOSSOS PLANOS */
@@ -350,7 +383,7 @@ footer .container {
   align-items: center;
 }
 
-footer .left{
+footer .left {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -376,20 +409,16 @@ footer .right .icon-social-media {
   border-bottom: solid 2px #d9d9d9;
   padding: 26.25px 85px;
   border-left: solid 2px #d9d9d9;
-  
 }
 
 .linguagens #borda {
   border-left: solid 2px #d9d9d9;
   padding-left: 85px;
-
-
 }
 
 #titulo {
   align-self: center;
   padding-right: 0px;
-
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------ */
@@ -398,7 +427,6 @@ footer .right .icon-social-media {
 
 .meio {
   padding: 24px 85px 0px 85px;
-  
 }
 
 .cursos1 {
@@ -407,12 +435,10 @@ footer .right .icon-social-media {
   justify-content: space-around;
   padding-bottom: 100px;
   padding-top: 44px;
-
 }
 
 .cursos1 .java-ninja {
   max-width: 26%;
-  
 }
 
 .cursos1 h4 {
@@ -428,7 +454,6 @@ footer .right .icon-social-media {
   flex-direction: row;
   justify-content: space-around;
   padding-bottom: 173px;
-
 }
 
 .cursos2 h4 {
@@ -443,31 +468,62 @@ footer .right .icon-social-media {
 
 /*footer  */
 
-.footer{
+.footer {
   display: flex;
-  justify-content:space-between;
-  background-color: #3B3DFB;
+  justify-content: space-between;
+  background-color: #3b3dfb;
   padding: 33px 85px 33px 85px;
   width: auto;
   height: 206px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer .contatos {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
 }
 
 .footer .redes-sociais {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
 }
 
 .footer .redes-sociais div img {
   max-width: 18px;
   margin-right: 5px;
+}
+
+/* hover */
+
+nav .white:hover, .card-button-white:hover {
+  color: var(--full-white);
+  background-color: var(--button-cards-plans);
+  transition: 0.75s ease;
+  &:active {
+    background-color: var(--full-white);
+    color: var(--full-black);
+    transition: 0.1s ease;
+  }
+}
+
+nav .blue:hover, .right-column .nav-button:hover, .card-button-purple:hover{
+  background-color: var(--hover-button);
+  color: var(--font-card-gray);
+  transition: 0.75s ease;
+  &:active {
+    background-color: var(--full-white);
+    transition: 0.1s ease;
+  }
+}
+
+.course-card:hover {
+  box-shadow: 1px 1px 3px 1px var(--shadow-form-box);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 5px 10px var(--shadow-blue-card-plan);
+  transition: 0.8s ease;
 }
