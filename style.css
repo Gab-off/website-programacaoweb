@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
 /* CSS GERAL  */
 * {
   margin: 0;
@@ -241,7 +243,6 @@ nav .blue {
   margin-right: 15px;
 }
 
-
 .course-card .video img {
   border-radius: 3px;
 }
@@ -257,7 +258,8 @@ nav .blue {
   padding: 80px 0 117px 0;
 }
 
-.container-course-plans h2, .container-course-plans h3 {
+.container-course-plans h2,
+.container-course-plans h3 {
   text-transform: uppercase;
   font-size: 40px;
 }
@@ -284,7 +286,6 @@ nav .blue {
   flex-direction: column;
   align-items: center;
   padding: 50px 20px;
-  
 }
 
 .card p {
@@ -293,7 +294,8 @@ nav .blue {
   color: var(--font-card-gray);
 }
 
-.card .container-boxtext-gray, .container-boxtext-purple {
+.card .container-boxtext-gray,
+.container-boxtext-purple {
   height: 220px;
   box-shadow: 0 1px 1px 0 var(--shadow-search-bar);
   text-align: start;
@@ -320,7 +322,8 @@ nav .blue {
   box-shadow: 0 4px 4px 0 var(--shadow-search-bar);
 }
 
-.card-one, .card-three {
+.card-one,
+.card-three {
   box-shadow: 0 1px 2px 1px var(--shadow-cardplan);
 }
 
@@ -330,7 +333,35 @@ nav .blue {
   box-shadow: 0 4px 4px 0 var(--shadow-blue-card-plan);
 }
 
-.container-boxtext-purple p{
- color: var(--full-white); 
+.container-boxtext-purple p {
+  color: var(--full-white);
+}
+
+/* FOOTER */
+
+footer .container {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--full-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .left{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .right .icon-social-media {
+  display: flex;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.icon-social-media img {
+  width: 24px;
 }
 
